@@ -3,7 +3,8 @@
 $numbers = array();
 foreach (range(0, 100, 3) as $i) {array_push($numbers, $i);}
 
-for ($num = 0; $num <= 100; $num += 3) {
+$num = 0;
+while ($num <= 100) {
     if (array_search($num, $numbers) == 0) {
         echo "First number.\n";
     } elseif (array_search($num, $numbers) == sizeof($numbers) - 1) {
@@ -13,4 +14,5 @@ for ($num = 0; $num <= 100; $num += 3) {
     } elseif ($num % 10 == 0) {
         echo "{$num} is a round number.\n";
     }
+    $num += 3;
 }
