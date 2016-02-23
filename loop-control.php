@@ -3,7 +3,7 @@
 $numbers = array();
 foreach (range(0, 100, 3) as $i) {array_push($numbers, $i);}
 
-foreach ($numbers as $num) {
+for ($num = 0; $num <= 100; $num += 3) {
     if (array_search($num, $numbers) == 0) {
         echo "First number.\n";
     } elseif (array_search($num, $numbers) == sizeof($numbers) - 1) {
