@@ -3,9 +3,9 @@
 include_once 'constants.php';
 
 $array = array(
-	CONST1 => 'first_item',
-	CONST2 => CONST4,
-	CONST3 => CONST5,
+    CONST1 => 'first_item',
+    CONST2 => CONST4,
+    CONST3 => CONST5,
 );
 
 $result = $array[CONST2] * $array[CONST3];
@@ -20,7 +20,7 @@ $multi_line_string = <<<EOT
 
     Nam vestibulum dolor bibendum elementum auctor. Cras euismod nibh vitae diam suscipit, id maximus tellus viverra. Fusce dictum nisl sed nisi venenatis mattis. Curabitur nec lacus magna. Aliquam lobortis orci sed euismod tempus. Etiam lacinia a purus nec vulputate. Pellentesque in placerat dui, non sagittis dui. Aenean vel tellus felis. Praesent malesuada tincidunt ligula. Donec enim nulla, maximus nec porttitor sit amet, consequat condimentum dui.
 
-    {$batman[0]}{$batman[1]}{$batman[2]}{$batman[3]}{$batman[1]}{$batman[4]}
+    {$batman[0]}{$batman[1]}{$batman[2]}{$batman[3]}{$batman[1]}{$batman[   ]}
 
     Donec bibendum, nunc in bibendum tempor, tellus justo porta sapien, ut fringilla odio orci in justo. Nulla non felis nibh. Mauris suscipit aliquam dolor vel dapibus. Praesent ac nunc tempor, cursus velit eget, malesuada metus. Nunc urna eros, vulputate sit amet nulla ac, vehicula bibendum metus. Proin auctor lectus eget augue fringilla, ut iaculis est malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla molestie velit eget ex rhoncus, eget rutrum eros condimentum.
 EOT;
