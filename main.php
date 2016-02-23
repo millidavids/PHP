@@ -10,4 +10,6 @@ $array = array(
 
 $result = $array[CONST2] * $array[CONST3];
 
-echo sprintf('The result of %d * %d is: %d', $array[CONST2], $array[CONST3], $result);
+// echo sprintf('The result of %d * %d is: %d', $array[CONST2], $array[CONST3], $result);
+
+echo 'The result of ' . $array[CONST2] . ' * ' . $array[CONST3] . ' is ' . $result;
